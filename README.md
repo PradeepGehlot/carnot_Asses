@@ -4,7 +4,15 @@ Setup Steps:
 	pip install -r requirment.txt
 
 2. restore the DB:
-	mysql -u learning -p Student < Student.sql
+        create database Student;
+	mysql -u <username> -p Student < Student.sql;
+
+3. Change credential for SQL:
+      Note: after installing please change usernamea and password as per your system:
+      1. Go to settings.py
+      2. change DATABASES config:
+         'USER': 'your username',
+         'PASSWORD': 'password'
 	
 
 Postman:
